@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
-  Homepage({super.key});
+  const Homepage({super.key});
 
-  String hello = "Hello";
+  final String hello = "Hello";
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +75,10 @@ class Homepage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
-                child: Text("Свяжитесь со мной", style: TextStyle(fontSize: 18, color: Colors.black)),
+                child: Text(
+                  "Свяжитесь со мной",
+                  style: TextStyle(fontSize: 18, color: Colors.black),
+                ),
               ),
             ),
           ],
