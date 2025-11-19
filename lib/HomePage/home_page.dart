@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
-  final String hello = "Hello";
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
 
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +69,7 @@ class Homepage extends StatelessWidget {
               height: 50,
               child: TextButton(
                 onPressed: () {
-                  print(hello);
+                  print("hello");
                 },
                 style: TextButton.styleFrom(
                   backgroundColor: Colors.blue,
